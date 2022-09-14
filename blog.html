@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <h1 class="text-center py-3 bg-warning text-white">Welcome To My Blog</h1>
+    </header>
+    <main>
+        <section class="container my-5">
+            <div class="card border border-warning border-3 shadow mb-3">
+                <div class="card-header p-3">
+                    <h5 class="card-title">What is the difference between Local-Storage & Session-Storage?</h5>
+                </div>
+                <div class="card-body pb-5">
+                  <p class="card-text">Session-Storage is similar to localStorage. The difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.</p>
+                </div>
+              </div>
+              
+            <div class="card border border-warning border-3 shadow mb-3">
+                <div class="card-header p-3">
+                    <h5 class="card-title">What is the difference between Global-scope & Block-scope?</h5>
+                </div>
+                <div class="card-body pb-5">
+                  <p class="card-text"><span class="fw-bold">Global-scope :</span> The global scope is the scope that contains, and is visible in, all other scopes. In client-side JavaScript, the global scope is generally the web page inside which all the code is being executed.</p>
+                  <p class="card-text"><span class="fw-bold">Block-scope :</span>This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped.</p>
+                </div>
+              </div>
+
+              <div class="card border border-warning border-3 shadow mb-3">
+                <div class="card-header p-3">
+                    <h5 class="card-title">What is event loop in JavaScript?</h5>
+                </div>
+                <div class="card-body pb-5">
+                  <p class="card-text">The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. The event loop is a mechanism that allows JavaScript to perform non-blocking operations. When an asynchronous task is started, the event loop will start running. Once the task is completed, the event loop will again check for any other tasks that need to be performed.</p>
+                </div>
+              </div>
+
+              <div class="card border border-warning border-3 shadow mb-5">
+                <div class="card-header p-3">
+                    <h5 class="card-title">How can we check for undifined?</h5>
+                </div>
+                <div class="card-body pb-5">
+                  <p class="card-text"><span class="fw-bold">Some way to get undifined :</span> <br>
+                        1. Variable that is not initialized will give undefine. <br>
+                        2. Function  with no return. <br>
+                        3. Parameter that is not passed will be undifine. <br>
+                        4. If return has nothing on the right side will return undifine. <br>
+                        5. Property that doesn't exists on an object will give you undifine. <br>
+                        6. Accessing arrray elements outside of the index range. <br>
+                        7. Deleting an element inside an array.
+                    </p>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer class="bg-black p-5">
+        <h1 class="text-center text-warning fw-bold">My Blog</h1>
+        <p class="text-center text-white">Copyright&copy;2022 reversed</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
